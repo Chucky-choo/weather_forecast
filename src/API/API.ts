@@ -21,7 +21,6 @@ const options: IOption = {
 export const ApiRequest = async (params: IParams) => {
   try {
   	const response = await axios.request({...options, params})
-    console.log(response.data.list)
   	return (response.data.list)
   } catch (err) {
   	console.error(err)
