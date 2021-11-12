@@ -4,7 +4,7 @@ import Main from "./components/main/Main";
 import {useDispatch, useSelector} from "react-redux";
 import {useStyles} from './AppStyle';
 import Navigation from "./components/navigation/Navigation";
-import {changeWeatherData, setCity} from './redux/weather-reducer';
+import {changeWeatherData, setCity, setNumberDays} from './redux/weather-reducer';
 import {CircularProgress, Typography} from "@material-ui/core";
 import {appStoreType} from "./redux/redux-store";
 
@@ -20,6 +20,9 @@ const App: FC = () => {
   const CityName = useSelector((store: appStoreType) => store.data.params.q)
 
   useEffect(() => {
+    if(/\/in\//i.test(location.pathname)){
+      dispatch(setNumberDays(10))
+    }
     if (cityURL !== '') {
       dispatch(setCity(cityURL))
       dispatch(changeWeatherData())
