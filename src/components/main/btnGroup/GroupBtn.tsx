@@ -23,8 +23,8 @@ const GroupBtn: FC = () => {
         variant="contained"
         aria-label="outlined primary button group"
       >
-        <Button onClick={() => {setNewCity('Warszawa')}}>
-          Minsk
+        <Button onClick={() => {setNewCity('Kyiv')}}>
+          Kyiv
         </Button>
         <Button onClick={() => {setNewCity('Moscow')}}>
           Moscow
