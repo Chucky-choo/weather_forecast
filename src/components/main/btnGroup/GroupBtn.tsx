@@ -26,11 +26,11 @@ const GroupBtn: FC = () => {
         <Button onClick={() => {setNewCity('Kyiv')}}>
           Kyiv
         </Button>
-        <Button onClick={() => {setNewCity('Moscow')}}>
-          Moscow
+        <Button onClick={() => {setNewCity('test')}}>
+          test
         </Button>
-        <Button onClick={() => {setNewCity('Bratislava')}}>
-          Bratislava
+        <Button onClick={() => {setNewCity('Warszawa')}}>
+          Warszawa
         </Button>
       </ButtonGroup>
     </div>
