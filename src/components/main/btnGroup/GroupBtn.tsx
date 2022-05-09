@@ -26,8 +26,8 @@ const GroupBtn: FC = () => {
         <Button onClick={() => {setNewCity('Kyiv')}}>
           Minsk
         </Button>
-        <Button onClick={() => {setNewCity('Moscow')}}>
-          Moscow
+        <Button onClick={() => {setNewCity('Lviv')}}>
+          Lviv
         </Button>
         <Button onClick={() => {setNewCity('Bratislava')}}>
           Bratislava
